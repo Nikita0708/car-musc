@@ -1,0 +1,52 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+@font-face {
+    font-family: 'Reforma Grotesk';
+    src: local('Reforma Grotesk Medium'), local('Reforma-Grotesk-Medium'),
+        url('./font/ReformaGroteskMedium.woff2') format('woff2'),
+        url('./font/ReformaGroteskMedium.woff') format('woff'),
+        url('./font/ReformaGroteskMedium.ttf') format('truetype');
+    font-weight: 500, 400, 600, 700;
+    font-style: normal;
+}
+body {
+    font-family: 'Reforma Grotesk', sans-serif;
+    background-color: var(--default-color);
+    scroll-behavior: smooth;
+    letter-spacing: 0.72px;
+    color: var(--white-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+ul,
+ol {  
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
