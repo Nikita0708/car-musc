@@ -1,0 +1,184 @@
+.section-form {
+    padding-bottom: 100px;
+    & .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.form-title {
+    font-size: 52px;
+        line-height: 140%;
+        letter-spacing: 2.6px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 40px;
+}
+.section-form__svg  {
+    margin-bottom: 60px;
+}
+.form-input {
+    background-color: transparent;
+    border: 1px solid var(--grey-color);
+    outline: 0;
+    width: 306px;
+    height: 47px;
+    transition: .2s;
+    color: var(--white-color);
+    font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        padding-left: 25px;
+    &:hover,
+    &:focus {
+        border: 1px solid var(--red-color);
+        &::placeholder {
+            color: var(--white-color);
+        }
+    }
+    &::placeholder {
+        color: var(--grey-color);
+        font-size: 16px;
+            line-height: 140%;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            transition: .2s;
+    }
+}
+
+.user-name {
+    margin-right: 24px;
+}
+.form-top-wrap {
+    margin-bottom: 24px;
+}
+.textarea {
+    background-color: transparent;
+        border: 1px solid var(--grey-color);
+        outline: 0;
+        width: 526px;
+        height: 150px;
+        transition: .2s;
+        color: var(--white-color);
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        padding-left: 25px;
+        padding-top: 15px;
+        resize: none;
+        margin-right: 70px;
+    &:hover,
+        &:focus {
+            border: 1px solid var(--red-color);
+    
+            &::placeholder {
+                color: var(--white-color);
+            }
+        }
+                &::placeholder {
+                    transition: .2s;
+                }
+}
+.form-middle-wrap {
+    display: flex;
+    margin-bottom: 24px;
+}
+.form-item {
+    cursor: pointer;
+    border: 1px solid var(--grey-color);
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+        transition: .2s;
+    & svg {
+        fill: var(--white-color);
+        transition: .2s;
+    }
+     &:not(:last-child) {
+        margin-bottom: 15px;
+     }
+     &:hover {
+        border: 1px solid var(--red-color);
+     }
+}
+.form-item:hover svg {
+    fill: var(--red-color);
+}
+
+.btn-form-submit {
+    display: block;
+    height: 61px;
+    width: 144px;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+    margin-right: 195px;
+
+    & p {
+        color: var(--white-color);
+        z-index: 100;
+        position: absolute;
+        text-transform: uppercase;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+    }
+
+    &:hover div {
+        left: 0;
+    }
+
+    & div {
+        width: 189px;
+        height: 61px;
+        background-color: var(--red-color);
+        position: absolute;
+        top: 0;
+        left: -199px;
+        transition: .5s;
+    }
+}
+.form-bottom-wrap {
+    display: flex;
+
+}
+.contacts-list {
+    width: 297px;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+.contact-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        &:hover {
+            & .contact-link {
+                    color: var(--red-color);
+                }
+                & svg {
+                    fill: var(--red-color);
+                }
+        }
+        & svg {
+            margin-right: 10px;
+            fill: var(--white-color);
+            transition: .2s;
+        }
+        &:nth-child(2) {
+            margin-right: 30px;
+        }
+}
+.contact-link {
+    color: var(--white-color);
+    transition: .2s;
+}

@@ -1,0 +1,112 @@
+.services {
+    padding-bottom: 180px;
+
+}
+.services-title {
+        text-align: center;
+        font-size: 52px;
+        line-height: 140%;
+        letter-spacing: 2.6px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+}
+.service-svg {
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 60px;
+}
+.services-btn {
+    cursor: pointer;
+    background-color: transparent;
+    width: 181px;
+    height: 75px;
+    border: none;
+    color: var(--white-color);
+    font-size: 32px;
+        line-height: 140%;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        transition: .2s;
+        &:hover {
+            background-color: var(--red-color);
+        }
+
+        &:first-child {
+            margin-right: 60px;
+        }
+        
+
+}
+.services-btn-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.services-btn__active {
+    background-color: var(--red-color);
+}
+.services-list {
+    display: flex;
+    justify-content: space-between;
+}
+.services-item {
+    border: 1px solid var(--grey-color);
+    padding-bottom: 50px;
+    padding-left: 39px;
+    padding-right: 41px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services-item__title {
+    font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+}
+.services-item__text {
+    width: 226px;
+    font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 25px;
+}
+.services-item__link {
+    display: block;
+    height: 41px;
+    width: 113px;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+
+    & p {
+        color: var(--white-color);
+        z-index: 100;
+        position: absolute;
+        text-transform: uppercase;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 22px;
+    }
+
+    &:hover div {
+        left: 0;
+    }
+
+    & div {
+        width: 133px;
+        height: 41px;
+        background-color: var(--red-color);
+        position: absolute;
+        top: 0;
+        left: -199px;
+        transition: .5s;
+    }
+}

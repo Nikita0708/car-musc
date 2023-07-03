@@ -1,0 +1,10 @@
+.preferences {
+    padding-bottom: 180px;
+    & .container {
+        display: flex;
+    }
+}
+.preferences-left-side {
+    margin-right: 134px;
+    position: relative;
+}

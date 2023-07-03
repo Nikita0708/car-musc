@@ -1,0 +1,119 @@
+.header-hero {
+    padding-top: 40px;
+    background-image: url('../images/header-bg.jpg');
+    background-position: center;
+    height: 960px;
+    background-size: cover;
+    position: relative;
+}
+.header-link {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+    color: var(--white-color);
+    transition: .2s;
+    &:hover {
+        color: var(--red-color);
+    }
+}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 168px;
+}
+.header-list {
+    display: flex;
+}
+.header-item:not(:last-child) {
+    margin-right: 40px;
+}
+.hero-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 103px;
+}
+.hero-title {
+    color: var(--red-color);
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 125%;
+    text-transform: uppercase;
+    font-style: normal;
+    text-align: center;
+}
+.hero-text {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 120%;
+    max-width: 437px;
+    text-align: center;
+    margin-top: 41px;
+    margin-bottom: 40px;
+}
+.hero-link {
+    display: block;
+    height: 61px;
+    width: 169px;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+
+    & p {
+        color: var(--white-color);
+        z-index: 100;
+        position: absolute;
+        text-transform: uppercase;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 22px;
+    }
+    
+    &:hover div {
+        left: 0;
+    }
+    & div {
+        width: 189px;
+        height: 61px;
+        background-color: var(--red-color);
+        position: absolute;
+        top: 0;
+        left: -199px;
+        transition: .5s;
+    }
+}
+.hero-info {
+    position: absolute;
+    display: flex;
+    max-width: 1920px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.hero-info-item {
+    border: 1px solid var(--grey-color);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.hero-info-title {
+    text-align: center;
+    font-size: 18px;
+        font-weight: 500;
+        line-height: 140%;
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+}
+.hero-info-text {
+    text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 140%;
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+        width: 265px;
+        color: var(--red-color);
+}

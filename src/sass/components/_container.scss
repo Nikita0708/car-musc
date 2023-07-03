@@ -1,7 +1,7 @@
 .container {
     width: 100%;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: 0 auto;
 
     @media screen and (min-width: 480px) {
@@ -13,6 +13,6 @@
     }
 
     @media screen and (min-width: 1296px) {
-        width: 1296px;
+        width: 1316px;
     }
 }
