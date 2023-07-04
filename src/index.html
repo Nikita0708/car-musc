@@ -11,24 +11,26 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./sass/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>Car musc</title>
   </head>
   <body>
     <section class="header-hero">
       <div class="container">
-        <nav class="header-nav">
+        <nav class="header-nav" data-aos="zoom-in">
           <ul class="header-list">
             <li class="header-item">
-              <a href="" class="header-link">Главная</a>
+              <a href="#" class="header-link">Home</a>
             </li>
             <li class="header-item">
-              <a href="" class="header-link">Оклейка автомобилей</a>
+              <a href="#carsticker" class="header-link">Car stickers</a>
             </li>
             <li class="header-item">
-              <a href="" class="header-link">Детейлинг автомобилей</a>
+              <a href="#cardetail" class="header-link">Car detailing</a>
             </li>
             <li class="header-item">
-              <a href="" class="header-link">Галерея работ</a>
+              <a href="#gallery" class="header-link">Gallery</a>
             </li>
           </ul>
           <svg class="header-svg" width="50" height="25">
@@ -38,7 +40,7 @@
             ></use>
           </svg>
         </nav>
-        <div class="hero-wrap">
+        <div class="hero-wrap" data-aos="zoom-in">
           <h1 class="hero-title">car musc</h1>
           <svg class="hero-svg" width="146" height="14.1">
             <use class="hero-use" href="./images/sprite.svg#icon-blocks"></use>
@@ -47,28 +49,28 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae orci
             urna amet penatibus.
           </p>
-          <a href="#" class="hero-link">
-            <p>Наши услуги</p>
+          <a href="#services" class="hero-link">
+            <p>Our services</p>
             <div></div>
           </a>
         </div>
 
         <ul class="hero-info">
           <li class="hero-info-item">
-            <span class="hero-info-title">адрес:</span
+            <span class="hero-info-title">address:</span
             ><span class="hero-info-text"
               >Lorem ipsum dolor sit amet, consectetur adipiscing elit</span
             >
           </li>
           <li class="hero-info-item">
-            <span class="hero-info-title">телефон:</span
+            <span class="hero-info-title">phone:</span
             ><span class="hero-info-text">8 (812) 123-45-67</span
             ><span class="hero-info-text">8-911-123-45-67</span>
           </li>
           <li class="hero-info-item">
-            <span class="hero-info-title">Режим работы:</span
-            ><span class="hero-info-text">пн-пт : 10:00 - 20:00</span
-            ><span class="hero-info-text">сб-вск : 12:00 - 20:00</span>
+            <span class="hero-info-title">working time:</span
+            ><span class="hero-info-text">mo-fr : 10:00 - 20:00</span
+            ><span class="hero-info-text">st-sn : 12:00 - 20:00</span>
           </li>
         </ul>
       </div>
@@ -76,16 +78,21 @@
     <section class="achievments">
       <div class="container">
         <div class="achievements-right-side">
-          <h1 class="achievements-title">
-            наши достижения от кубка россии до чемпионатов мира
+          <h1 class="achievements-title" data-aos="fade-up-right">
+            our achievements from the US Cup to the World Championships
           </h1>
-          <svg class="achievements-svg-blocks" width="146" height="14.1">
+          <svg
+            class="achievements-svg-blocks"
+            width="146"
+            height="14.1"
+            data-aos="fade-right"
+          >
             <use
               class="achievements-use"
               href="./images/sprite.svg#icon-blocks"
             ></use>
           </svg>
-          <p class="achievements-text">
+          <p class="achievements-text" data-aos="fade-right">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant
             tincidunt aliquam tincidunt pretium sodales. Tristique odio
             pellentesque et tincidunt posuere arcu purus lobortis risus. Urna,
@@ -94,7 +101,7 @@
             pretium, volutpat.
           </p>
         </div>
-        <div class="achievements-left-side">
+        <div class="achievements-left-side" data-aos="fade-up-left">
           <ul class="achievements-list">
             <li class="achievements-item">
               <svg class="achievements-svg" width="28" height="73">
@@ -200,7 +207,7 @@
     </section>
     <section class="cards-slider" id="cards-slider">
       <div class="container">
-        <h1 class="cards-slider__title visually-hidden">Примеры работ</h1>
+        <h1 class="cards-slider__title visually-hidden">Work examples</h1>
         <button type="button" class="cards-slider__btn-prev cards-slider__btn">
           <svg width="50" height="50">
             <use href="./images/sprite.svg#icon-slider-left"></use>
@@ -270,18 +277,18 @@
         </button>
       </div>
     </section>
-    <section class="description">
+    <section class="description" id="cardetail">
       <div class="container">
-        <h1 class="visually-hidden">Описание</h1>
+        <h1 class="visually-hidden">Description</h1>
         <div class="description-left-side">
           <ul class="description-list">
-            <li class="description-item">
+            <li class="description-item" data-aos="fade-down-right">
               <div class="description-title__wrap">
                 <svg width="56.5" height="70">
                   <use href="./images/sprite.svg#icon-list"></use>
                 </svg>
                 <h2 class="description-list__title">
-                  материалы от лучших компаний
+                  materials from the best companies
                 </h2>
               </div>
               <p class="description__text">
@@ -293,12 +300,12 @@
                 <use href="./images/sprite.svg#icon-blocks"></use>
               </svg>
             </li>
-            <li class="description-item">
+            <li class="description-item" data-aos="fade-right">
               <div class="description-title__wrap">
                 <svg width="70" height="45.2">
                   <use href="./images/sprite.svg#icon-oil"></use>
                 </svg>
-                <h2 class="description-list__title">Опытные мастера</h2>
+                <h2 class="description-list__title">Experienced craftsmen</h2>
               </div>
               <p class="description__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et
@@ -311,13 +318,13 @@
                 <use href="./images/sprite.svg#icon-blocks"></use>
               </svg>
             </li>
-            <li class="description-item">
+            <li class="description-item" data-aos="fade-up-right">
               <div class="description-title__wrap">
                 <svg width="70" height="70">
                   <use href="./images/sprite.svg#icon-detail"></use>
                 </svg>
                 <h2 class="description-list__title">
-                  Гарантия на все виды работы
+                  Warranty for all types of work
                 </h2>
               </div>
               <p class="description__text">
@@ -327,12 +334,7 @@
             </li>
           </ul>
         </div>
-        <div class="description-right-side">
-          <button type="button" class="description__btn-prev description__btn">
-            <svg width="50" height="50">
-              <use href="./images/sprite.svg#icon-slider-left"></use>
-            </svg>
-          </button>
+        <div class="description-right-side" data-aos="fade-left">
           <ul class="description-slider">
             <li class="description-slider__item">
               <img src="./images/carslider4.jpg" alt="" />
@@ -341,155 +343,174 @@
                 Pellentesque auctor nibh feugiat est. Consectetur lectus.
               </p>
             </li>
-            <li
-              class="description-slider__item description-slider__item-unshown"
-            >
-              <img src="./images/carslider1.jpg" alt="" />
-              <p class="description-slider__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque auctor nibh feugiat est. Consectetur lectus.
-              </p>
-            </li>
-            <li
-              class="description-slider__item description-slider__item-unshown"
-            >
-              <img src="./images/carslider2.jpg" alt="" />
-              <p class="description-slider__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque auctor nibh feugiat est. Consectetur lectus.
-              </p>
-            </li>
           </ul>
-          <button type="button" class="description__btn-next description__btn">
-            <svg width="50" height="50">
-              <use href="./images/sprite.svg#icon-slider-right"></use>
-            </svg>
-          </button>
         </div>
       </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
       <div class="container">
-        <h1 class="services-title">Наши услуги</h1>
+        <h1 class="services-title" data-aos="fade-down">Our services</h1>
         <svg width="146" height="14.1" class="service-svg">
           <use href="./images/sprite.svg#icon-blocks"></use>
         </svg>
         <div class="services-btn-wrap">
-          <button type="button" class="services-btn services-btn__active">
-            Оклейка
+          <button
+            type="button"
+            class="services-btn services-btn__active"
+            id="first-btn"
+            data-aos="fade-right"
+          >
+            Pasting
           </button>
-          <button type="button" class="services-btn">Детейлинг</button>
+          <button
+            type="button"
+            class="services-btn"
+            id="second-btn"
+            data-aos="fade-left"
+          >
+            Detailing
+          </button>
         </div>
-        <ul class="services-list services-list__active">
-          <li class="services-item">
+        <ul class="services-list" id="list1">
+          <li class="services-item" data-aos="fade-up-right">
             <svg width="70" height="70.3">
               <use href="./images/sprite.svg#icon-plenka"></use>
             </svg>
-            <h2 class="services-item__title">Защитные пленки</h2>
+            <h2 class="services-item__title">Protective skins</h2>
             <p class="services-item__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
               ultrices pellentesque vulputate sit. Ut feugiat.
             </p>
             <a href="" class="services-item__link"
-              ><p>Подробнее</p>
+              ><p>More</p>
               <div></div
             ></a>
           </li>
-          <li class="services-item">
+          <li class="services-item" data-aos="fade-up">
             <svg width="56.5" height="70.3">
               <use href="./images/sprite.svg#icon-list"></use>
             </svg>
-            <h2 class="services-item__title">Цветные пленки</h2>
+            <h2 class="services-item__title">Color skins</h2>
             <p class="services-item__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
               ultrices pellentesque vulputate sit. Ut feugiat.
             </p>
             <a href="" class="services-item__link"
-              ><p>Подробнее</p>
+              ><p>More</p>
               <div></div
             ></a>
           </li>
-          <li class="services-item">
+          <li class="services-item" data-aos="fade-up">
             <svg width="70" height="70.3">
               <use href="./images/sprite.svg#icon-oil"></use>
             </svg>
-            <h2 class="services-item__title">Дизайн</h2>
+            <h2 class="services-item__title">Design</h2>
             <p class="services-item__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
               ultrices pellentesque vulputate sit. Ut feugiat.
             </p>
             <a href="" class="services-item__link"
-              ><p>Подробнее</p>
+              ><p>More</p>
               <div></div
             ></a>
           </li>
-          <li class="services-item">
+          <li class="services-item" data-aos="fade-up-left">
             <svg width="70" height="70.3">
               <use href="./images/sprite.svg#icon-detail"></use>
             </svg>
-            <h2 class="services-item__title">Оклейка салона</h2>
+            <h2 class="services-item__title">Salon pasting</h2>
             <p class="services-item__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
               ultrices pellentesque vulputate sit. Ut feugiat.
             </p>
             <a href="" class="services-item__link"
-              ><p>Подробнее</p>
+              ><p>More</p>
+              <div></div
+            ></a>
+          </li>
+        </ul>
+        <ul class="services-list services-list__unshowed" id="list2">
+          <li class="services-item" data-aos="fade-up-right">
+            <svg width="56.5" height="70.3">
+              <use href="./images/sprite.svg#icon-list"></use>
+            </svg>
+            <h2 class="services-item__title">Color skins</h2>
+            <p class="services-item__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
+              ultrices pellentesque vulputate sit. Ut feugiat.
+            </p>
+            <a href="" class="services-item__link"
+              ><p>More</p>
+              <div></div
+            ></a>
+          </li>
+          <li class="services-item" data-aos="fade-up">
+            <svg width="70" height="70.3">
+              <use href="./images/sprite.svg#icon-oil"></use>
+            </svg>
+            <h2 class="services-item__title">Design</h2>
+            <p class="services-item__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
+              ultrices pellentesque vulputate sit. Ut feugiat.
+            </p>
+            <a href="" class="services-item__link"
+              ><p>More</p>
+              <div></div
+            ></a>
+          </li>
+          <li class="services-item" data-aos="fade-up">
+            <svg width="70" height="70.3">
+              <use href="./images/sprite.svg#icon-detail"></use>
+            </svg>
+            <h2 class="services-item__title">Salon pasting</h2>
+            <p class="services-item__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
+              ultrices pellentesque vulputate sit. Ut feugiat.
+            </p>
+            <a href="" class="services-item__link"
+              ><p>More</p>
+              <div></div
+            ></a>
+          </li>
+          <li class="services-item" data-aos="fade-up-left">
+            <svg width="70" height="70.3">
+              <use href="./images/sprite.svg#icon-plenka"></use>
+            </svg>
+            <h2 class="services-item__title">Protective skins</h2>
+            <p class="services-item__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
+              ultrices pellentesque vulputate sit. Ut feugiat.
+            </p>
+            <a href="" class="services-item__link"
+              ><p>More</p>
               <div></div
             ></a>
           </li>
         </ul>
       </div>
     </section>
-    <section class="preferences">
+    <section class="preferences" id="carsticker">
       <div class="container">
-        <h1 class="visually-hidden">Преимущества</h1>
+        <h1 class="visually-hidden">Benefits</h1>
         <div class="preferences-left-side">
-          <button type="button" class="description__btn-prev description__btn">
-            <svg width="50" height="50">
-              <use href="./images/sprite.svg#icon-slider-left"></use>
-            </svg>
-          </button>
-          <ul class="description-slider">
+          <ul class="description-slider" data-aos="fade-right">
             <li class="description-slider__item">
-              <img src="./images/carslider4.jpg" alt="" />
-              <p class="description-slider__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque auctor nibh feugiat est. Consectetur lectus.
-              </p>
-            </li>
-            <li
-              class="description-slider__item description-slider__item-unshown"
-            >
-              <img src="./images/carslider1.jpg" alt="" />
-              <p class="description-slider__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque auctor nibh feugiat est. Consectetur lectus.
-              </p>
-            </li>
-            <li
-              class="description-slider__item description-slider__item-unshown"
-            >
-              <img src="./images/carslider2.jpg" alt="" />
+              <img src="./images/carslider5.jpg" alt="" />
               <p class="description-slider__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Pellentesque auctor nibh feugiat est. Consectetur lectus.
               </p>
             </li>
           </ul>
-          <button type="button" class="description__btn-next description__btn">
-            <svg width="50" height="50">
-              <use href="./images/sprite.svg#icon-slider-right"></use>
-            </svg>
-          </button>
         </div>
         <div class="preferences-side-side">
           <ul class="description-list">
-            <li class="description-item">
+            <li class="description-item" data-aos="fade-down-left">
               <div class="description-title__wrap">
                 <svg width="70" height="56.3">
                   <use href="./images/sprite.svg#icon-plenka"></use>
                 </svg>
-                <h2 class="description-list__title">100% полироль axem</h2>
+                <h2 class="description-list__title">100% axem polish</h2>
               </div>
               <p class="description__text">
                 Pharetra in bibendum id id. Sit maecenas sollicitudin est,
@@ -500,13 +521,13 @@
                 <use href="./images/sprite.svg#icon-blocks"></use>
               </svg>
             </li>
-            <li class="description-item">
+            <li class="description-item" data-aos="fade-left">
               <div class="description-title__wrap">
                 <svg width="56.5" height="70">
                   <use href="./images/sprite.svg#icon-list"></use>
                 </svg>
                 <h2 class="description-list__title">
-                  выполняем работу четко по тз
+                  making work according to the requirements
                 </h2>
               </div>
               <p class="description__text">
@@ -518,12 +539,14 @@
                 <use href="./images/sprite.svg#icon-blocks"></use>
               </svg>
             </li>
-            <li class="description-item">
+            <li class="description-item" data-aos="fade-up-left">
               <div class="description-title__wrap">
                 <svg width="70" height="42.5">
                   <use href="./images/sprite.svg#icon-oil"></use>
                 </svg>
-                <h2 class="description-list__title">у нас лучшие мастера</h2>
+                <h2 class="description-list__title">
+                  we have the best masters
+                </h2>
               </div>
               <p class="description__text">
                 Posuere nam sodales ullamcorper bibendum justo maecenas at.
@@ -535,101 +558,50 @@
         </div>
       </div>
     </section>
-    <section class="works">
+    <section class="works" id="gallery">
       <div class="container">
-        <h1 class="works-title">Наши работы</h1>
+        <h1 class="works-title" data-aos="fade-down">Our Works</h1>
         <svg width="146" height="14.1">
           <use href="./images/sprite.svg#icon-blocks"></use>
         </svg>
       </div>
-      <!-- <div class="gallery">
-        <div class="gallery-item">
-          <img
-            src="./images/galcar1.jpg"
-            onclick="openModal();currentSlide(1)"
-            alt=""
-            class="gallery-img"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="./images/galcar2.jpg"
-            onclick="openModal();currentSlide(2)"
-            alt=""
-            class="gallery-img"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="./images/galcar3.jpg"
-            onclick="openModal();currentSlide(3)"
-            alt=""
-            class="gallery-img"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="./images/galcar4.jpg"
-            onclick="openModal();currentSlide(4)"
-            alt=""
-            class="gallery-img"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="./images/galcar5.jpg"
-            onclick="openModal();currentSlide(5)"
-            alt=""
-            class="gallery-img"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="./images/galcar6.jpg"
-            onclick="openModal();currentSlide(6)"
-            alt=""
-            class="gallery-img"
-          />
-        </div>
-      </div> -->
-
       <div class="gallery">
-        <div class="gallery-item">
+        <div class="gallery-item" data-aos="fade-down-right">
           <img
             src="./images/galcar1.jpg"
             onclick="openModal();currentSlide(1)"
             class="gallery-img cursor"
           />
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-aos="fade-down">
           <img
             src="./images/galcar2.jpg"
             onclick="openModal();currentSlide(2)"
             class="gallery-img cursor"
           />
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-aos="fade-up">
           <img
             src="./images/galcar3.jpg"
             onclick="openModal();currentSlide(3)"
             class="gallery-img cursor"
           />
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-aos="fade-up">
           <img
             src="./images/galcar4.jpg"
             onclick="openModal();currentSlide(4)"
             class="gallery-img cursor"
           />
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-aos="fade-down">
           <img
             src="./images/galcar5.jpg"
             onclick="openModal();currentSlide(5)"
             class="gallery-img cursor"
           />
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-aos="fade-down-left">
           <img
             src="./images/galcar6.jpg"
             onclick="openModal();currentSlide(6)"
@@ -730,7 +702,9 @@
     </section>
     <section class="section-form">
       <div class="container">
-        <h1 class="form-title">ответим на любой вопрос</h1>
+        <h1 class="form-title" data-aos="fade-down">
+          we will answer any question
+        </h1>
         <svg width="146" height="14.1" class="section-form__svg">
           <use href="./images/sprite.svg#icon-blocks"></use>
         </svg>
@@ -741,12 +715,14 @@
               name="user-name"
               class="user-name form-input"
               placeholder="name"
+              data-aos="fade-right"
             />
             <input
               type="tel"
               name="user-tel"
               class="user-tel form-input"
               placeholder="phone number"
+              data-aos="fade-left"
             />
           </div>
           <div class="form-middle-wrap">
@@ -754,23 +730,24 @@
               name="textarea"
               class="textarea"
               placeholder="questions"
+              data-aos="fade-up-right"
             ></textarea>
             <ul class="list-socials">
-              <li class="form-item">
+              <li class="form-item" data-aos="fade-down-left">
                 <a href="" class="social-links">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#icon-tg"></use>
                   </svg>
                 </a>
               </li>
-              <li class="form-item">
+              <li class="form-item" data-aos="fade-left">
                 <a href="" class="social-links">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#icon-yt"></use>
                   </svg>
                 </a>
               </li>
-              <li class="form-item">
+              <li class="form-item" data-aos="fade-up-left">
                 <a href="" class="social-links">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#icon-wk"></use>
@@ -779,9 +756,9 @@
               </li>
             </ul>
           </div>
-          <div class="form-bottom-wrap">
+          <div class="form-bottom-wrap" data-aos="fade-up">
             <button type="submit" class="btn-form-submit">
-              <p>отправить</p>
+              <p>submit</p>
               <div></div>
             </button>
             <ul class="contacts-list">
@@ -822,21 +799,26 @@
         </p>
         <ul class="footer-list">
           <li class="footer-item">
-            <a href="#" class="footer-link">Главная</a>
+            <a href="#" class="footer-link">Main</a>
           </li>
           <li class="footer-item">
-            <a href="#" class="footer-link">Оклейка автомобилей</a>
+            <a href="#" class="footer-link">Car stickers</a>
           </li>
           <li class="footer-item">
-            <a href="#" class="footer-link">Детейлинг автомобилей</a>
+            <a href="#" class="footer-link">Car Detailing</a>
           </li>
           <li class="footer-item">
-            <a href="#" class="footer-link">Галерея работ</a>
+            <a href="#" class="footer-link">Gallery</a>
           </li>
         </ul>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./js/modal.js"></script>
     <script src="./js/cards-slider.js"></script>
+    <script src="./js/services.js"></script>
   </body>
 </html>

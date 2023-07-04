@@ -13,12 +13,17 @@ h5 {
   font-weight: 500, 400, 600, 700;
   font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Reforma Grotesk", sans-serif;
   background-color: var(--default-color);
   scroll-behavior: smooth;
   letter-spacing: 0.72px;
   color: var(--white-color);
+  
 }
 
 a {
@@ -233,6 +238,7 @@ ol {
   letter-spacing: 2.6px;
   text-transform: uppercase;
   margin-bottom: 40px;
+  width: 636px;
 }
 
 .achievements-svg-blocks {
@@ -543,6 +549,10 @@ ol {
   transition: 0.5s;
 }
 
+.services-list__unshowed {
+  display: none;
+}
+
 .preferences {
   padding-bottom: 180px;
 }
@@ -621,7 +631,7 @@ ol {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   padding-top: 100px;
   left: 0;
   top: 0;
@@ -882,7 +892,7 @@ ol {
 }
 .btn-form-submit p {
   color: var(--white-color);
-  z-index: 100;
+  z-index: 1;
   position: absolute;
   text-transform: uppercase;
   left: 50%;

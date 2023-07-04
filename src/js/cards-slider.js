@@ -16,7 +16,6 @@ btnPrev.addEventListener('click', () => {
     const slide1 = document.getElementById('slide1');
     slide1.classList.remove('cards-slider__item-unshowed');
     btnNext.classList.remove('cards-slider__btn-disabled');
-
     btnPrev.classList.add('cards-slider__btn-disabled');
 
 })

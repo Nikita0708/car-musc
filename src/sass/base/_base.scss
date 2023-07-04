@@ -15,12 +15,16 @@ h5 {
     font-weight: 500, 400, 600, 700;
     font-style: normal;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Reforma Grotesk', sans-serif;
     background-color: var(--default-color);
     scroll-behavior: smooth;
     letter-spacing: 0.72px;
     color: var(--white-color);
+    
 }
 
 a {
