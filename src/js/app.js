@@ -5,4 +5,4 @@ ScrollSmoother.create({
     content: '.content',
     smooth: 1.5,
     effects: true,
-})
+}) 

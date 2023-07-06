@@ -19,7 +19,7 @@
     <div class="wrapper">
       <div class="content">
         <section class="header-hero">
-          <div class="container">
+          <div class="container" data-speed=".9">
             <nav class="header-nav" data-aos="zoom-in">
               <ul class="header-list">
                 <li class="header-item">
@@ -82,7 +82,7 @@
         </section>
         <section class="achievments">
           <div class="container">
-            <div class="achievements-right-side">
+            <div class="achievements-right-side" data-speed=".8">
               <h1 class="achievements-title" data-aos="fade-up-right">
                 our achievements from the US Cup to the World Championships
               </h1>
@@ -106,7 +106,11 @@
                 nulla nam arcu, non iaculis pretium, volutpat.
               </p>
             </div>
-            <div class="achievements-left-side" data-aos="fade-up-left">
+            <div
+              class="achievements-left-side"
+              data-aos="fade-up-left"
+              data-speed=".9"
+            >
               <ul class="achievements-list">
                 <li class="achievements-item">
                   <svg class="achievements-svg" width="28" height="73">
@@ -210,7 +214,7 @@
             </div>
           </div>
         </section>
-        <section class="cards-slider" id="cards-slider">
+        <section class="cards-slider" id="cards-slider" data-speed=".9">
           <div class="container">
             <h1 class="cards-slider__title visually-hidden">Work examples</h1>
             <button
@@ -291,7 +295,7 @@
         <section class="description" id="cardetail">
           <div class="container">
             <h1 class="visually-hidden">Description</h1>
-            <div class="description-left-side">
+            <div class="description-left-side" data-speed=".8">
               <ul class="description-list">
                 <li class="description-item" data-aos="fade-down-right">
                   <div class="description-title__wrap">
@@ -347,7 +351,11 @@
                 </li>
               </ul>
             </div>
-            <div class="description-right-side" data-aos="fade-left">
+            <div
+              class="description-right-side"
+              data-aos="fade-left"
+              data-speed=".9"
+            >
               <ul class="description-slider">
                 <li class="description-slider__item">
                   <img src="./images/carslider4.jpg" alt="" />
@@ -360,7 +368,7 @@
             </div>
           </div>
         </section>
-        <section class="services" id="services">
+        <section class="services" id="services" data-speed=".9">
           <div class="container">
             <h1 class="services-title" data-aos="fade-down">Our services</h1>
             <svg width="146" height="14.1" class="service-svg">
@@ -384,6 +392,7 @@
                 Detailing
               </button>
             </div>
+
             <ul class="services-list" id="list1">
               <li class="services-item" data-aos="fade-up-right">
                 <svg width="70" height="70.3">
@@ -505,7 +514,7 @@
         <section class="preferences" id="carsticker">
           <div class="container">
             <h1 class="visually-hidden">Benefits</h1>
-            <div class="preferences-left-side">
+            <div class="preferences-left-side" data-speed=".8">
               <ul class="description-slider" data-aos="fade-right">
                 <li class="description-slider__item">
                   <img src="./images/carslider5.jpg" alt="" />
@@ -516,7 +525,7 @@
                 </li>
               </ul>
             </div>
-            <div class="preferences-side-side">
+            <div class="preferences-side-side" data-speed=".9">
               <ul class="description-list">
                 <li class="description-item" data-aos="fade-down-left">
                   <div class="description-title__wrap">
@@ -571,7 +580,7 @@
             </div>
           </div>
         </section>
-        <section class="works" id="gallery">
+        <section class="works" id="gallery" data-speed=".9">
           <div class="container">
             <h1 class="works-title" data-aos="fade-down">Our Works</h1>
             <svg width="146" height="14.1">
@@ -580,140 +589,26 @@
           </div>
           <div class="gallery">
             <div class="gallery-item" data-aos="fade-down-right">
-              <img
-                src="./images/galcar1.jpg"
-                onclick="openModal();currentSlide(1)"
-                class="gallery-img cursor"
-              />
+              <img src="./images/galcar1.jpg" class="gallery-img cursor" />
             </div>
             <div class="gallery-item" data-aos="fade-down">
-              <img
-                src="./images/galcar2.jpg"
-                onclick="openModal();currentSlide(2)"
-                class="gallery-img cursor"
-              />
+              <img src="./images/galcar2.jpg" class="gallery-img cursor" />
             </div>
             <div class="gallery-item" data-aos="fade-up">
-              <img
-                src="./images/galcar3.jpg"
-                onclick="openModal();currentSlide(3)"
-                class="gallery-img cursor"
-              />
+              <img src="./images/galcar3.jpg" class="gallery-img cursor" />
             </div>
             <div class="gallery-item" data-aos="fade-up">
-              <img
-                src="./images/galcar4.jpg"
-                onclick="openModal();currentSlide(4)"
-                class="gallery-img cursor"
-              />
+              <img src="./images/galcar4.jpg" class="gallery-img cursor" />
             </div>
             <div class="gallery-item" data-aos="fade-down">
-              <img
-                src="./images/galcar5.jpg"
-                onclick="openModal();currentSlide(5)"
-                class="gallery-img cursor"
-              />
+              <img src="./images/galcar5.jpg" class="gallery-img cursor" />
             </div>
             <div class="gallery-item" data-aos="fade-down-left">
-              <img
-                src="./images/galcar6.jpg"
-                onclick="openModal();currentSlide(6)"
-                class="gallery-img cursor"
-              />
-            </div>
-          </div>
-
-          <div id="myModal" class="modal">
-            <span class="close cursor" onclick="closeModal()">&times;</span>
-            <div class="modal-content">
-              <div class="mySlides">
-                <div class="numbertext">1 / 6</div>
-                <img src="./images/galcar1.jpg" />
-              </div>
-
-              <div class="mySlides">
-                <div class="numbertext">2 / 6</div>
-                <img src="./images/galcar2.jpg" />
-              </div>
-
-              <div class="mySlides">
-                <div class="numbertext">3 / 6</div>
-                <img src="./images/galcar3.jpg" />
-              </div>
-
-              <div class="mySlides">
-                <div class="numbertext">4 / 6</div>
-                <img src="./images/galcar4.jpg" />
-              </div>
-              <div class="mySlides">
-                <div class="numbertext">5 / 6</div>
-                <img src="./images/galcar5.jpg" />
-              </div>
-              <div class="mySlides">
-                <div class="numbertext">6 / 6</div>
-                <img src="./images/galcar6.jpg" />
-              </div>
-
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-              <div class="caption-container">
-                <p id="caption"></p>
-              </div>
-              <div class="demo-wrap">
-                <div class="column">
-                  <img
-                    class="demo cursor"
-                    src="./images/galcar1.jpg"
-                    onclick="currentSlide(1)"
-                    alt="r8"
-                  />
-                </div>
-                <div class="column">
-                  <img
-                    class="demo cursor"
-                    src="./images/galcar2.jpg"
-                    onclick="currentSlide(2)"
-                    alt="supra"
-                  />
-                </div>
-                <div class="column">
-                  <img
-                    class="demo cursor"
-                    src="./images/galcar3.jpg"
-                    onclick="currentSlide(3)"
-                    alt="gt"
-                  />
-                </div>
-                <div class="column">
-                  <img
-                    class="demo cursor"
-                    src="./images/galcar4.jpg"
-                    onclick="currentSlide(4)"
-                    alt="lambo"
-                  />
-                </div>
-                <div class="column">
-                  <img
-                    class="demo cursor"
-                    src="./images/galcar5.jpg"
-                    onclick="currentSlide(5)"
-                    alt="supra"
-                  />
-                </div>
-                <div class="column">
-                  <img
-                    class="demo cursor"
-                    src="./images/galcar6.jpg"
-                    onclick="currentSlide(6)"
-                    alt="bmw"
-                  />
-                </div>
-              </div>
+              <img src="./images/galcar6.jpg" class="gallery-img cursor" />
             </div>
           </div>
         </section>
-        <section class="section-form">
+        <section class="section-form" data-speed=".9">
           <div class="container">
             <h1 class="form-title" data-aos="fade-down">
               we will answer any question
@@ -832,9 +727,8 @@
     <script>
       AOS.init();
     </script>
-    <script src="./js/modal.js" defer></script>
-    <script src="./js/cards-slider.js" defer></script>
-    <script src="./js/services.js" defer></script>
+    <script src="./js/cards-slider.js"></script>
+    <script src="./js/services.js"></script>
     <script src="./libs/gsap/gsap.min.js" defer></script>
     <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
     <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
