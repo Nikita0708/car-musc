@@ -58,3 +58,8 @@ ol {
     height: 100%;
     overflow: hidden;
 }
+
+/* will change*/
+.content, .container, .achievements-right-side, .achievements-left-side, .cards-slider, .description-left-side, .description-right-side, .services, .preferences-left-side, .preferences-side-side, .works, .section-form {
+    will-change: transform;
+}
