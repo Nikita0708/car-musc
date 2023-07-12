@@ -28,7 +28,7 @@
     & img {
         width: 240px;
         height: 220px;
-        transition: .2s;
+        transition: .3s;
     }
     
 }
@@ -37,8 +37,7 @@
     cursor: pointer;
     overflow: hidden;
     &:hover .gallery-img{
-        width: 260px;
-        height: 230px;
+        transform: scale(1.2)
     }
 }
 

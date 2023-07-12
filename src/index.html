@@ -12,7 +12,6 @@
     />
     <link rel="stylesheet" href="./sass/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
     <title>Car musc</title>
   </head>
   <body class="body">
@@ -35,6 +34,7 @@
                   <a href="#gallery" class="header-link">Gallery</a>
                 </li>
               </ul>
+
               <svg class="header-svg" width="50" height="25">
                 <use
                   class="header-use"
@@ -80,6 +80,15 @@
             </ul>
           </div>
         </section>
+        <div class="mob-menu is-hidden">
+          <div class="mob-menu-container">
+            <button type="button" class="closeBtn">
+              <svg width="24" height="24">
+                <use href="./images/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
         <section class="achievments">
           <div class="container">
             <div class="achievements-right-side" data-speed=".8">
@@ -113,7 +122,7 @@
             >
               <ul class="achievements-list">
                 <li class="achievements-item">
-                  <svg class="achievements-svg" width="28" height="73">
+                  <svg class="achievements-svg" width="22.4" height="58.4">
                     <use
                       class="achievements-use"
                       href="./images/sprite.svg#icon-1"
@@ -125,7 +134,7 @@
                   </p>
                 </li>
                 <li class="achievements-item">
-                  <svg class="achievements-svg" width="28" height="73">
+                  <svg class="achievements-svg" width="22.4" height="58.4">
                     <use
                       class="achievements-use"
                       href="./images/sprite.svg#icon-1"
@@ -137,7 +146,7 @@
                   </p>
                 </li>
                 <li class="achievements-item">
-                  <svg class="achievements-svg" width="28" height="73">
+                  <svg class="achievements-svg" width="22.4" height="58.4">
                     <use
                       class="achievements-use"
                       href="./images/sprite.svg#icon-1"
@@ -149,7 +158,7 @@
                   </p>
                 </li>
                 <li class="achievements-item">
-                  <svg class="achievements-svg" width="28" height="73">
+                  <svg class="achievements-svg" width="22.4" height="58.4">
                     <use
                       class="achievements-use"
                       href="./images/sprite.svg#icon-1"
@@ -163,7 +172,7 @@
               </ul>
               <ul class="achievements-list">
                 <li class="achievements-item">
-                  <svg class="achievements-svg" width="28" height="73">
+                  <svg class="achievements-svg" width="22.4" height="58.4">
                     <use
                       class="achievements-use"
                       href="./images/sprite.svg#icon-1"
@@ -175,7 +184,7 @@
                   </p>
                 </li>
                 <li class="achievements-item">
-                  <svg class="achievements-svg" width="28" height="73">
+                  <svg class="achievements-svg" width="22.4" height="58.4">
                     <use
                       class="achievements-use"
                       href="./images/sprite.svg#icon-1"
@@ -187,7 +196,7 @@
                   </p>
                 </li>
                 <li class="achievements-item">
-                  <svg class="achievements-svg" width="28" height="73">
+                  <svg class="achievements-svg" width="22.4" height="58.4">
                     <use
                       class="achievements-use"
                       href="./images/sprite.svg#icon-1"
@@ -199,7 +208,7 @@
                   </p>
                 </li>
                 <li class="achievements-item">
-                  <svg class="achievements-svg" width="37.3" height="73">
+                  <svg class="achievements-svg" width="22.4" height="58.4">
                     <use
                       class="achievements-use"
                       href="./images/sprite.svg#icon-cup"
@@ -217,16 +226,9 @@
         <section class="cards-slider" id="cards-slider" data-speed=".9">
           <div class="container">
             <h1 class="cards-slider__title visually-hidden">Work examples</h1>
-            <button
-              type="button"
-              class="cards-slider__btn-prev cards-slider__btn"
-            >
-              <svg width="50" height="50">
-                <use href="./images/sprite.svg#icon-slider-left"></use>
-              </svg>
-            </button>
-            <ul class="cards-slider__list" id="slider">
-              <li class="cards-slider__item" id="slide1">
+            <!-- start -->
+            <ul class="cards-slider__list swiper-wrapper" id="slider">
+              <li class="cards-slider__item swiper-slide" id="slide1">
                 <img
                   src="./images/carslider1.jpg"
                   alt=""
@@ -239,7 +241,7 @@
                   </p>
                 </div>
               </li>
-              <li class="cards-slider__item" id="slide2">
+              <li class="cards-slider__item swiper-slide" id="slide2">
                 <img
                   src="./images/carslider2.jpg"
                   alt=""
@@ -252,7 +254,7 @@
                   </p>
                 </div>
               </li>
-              <li class="cards-slider__item" id="slide3">
+              <li class="cards-slider__item swiper-slide" id="slide3">
                 <img
                   src="./images/carslider3.jpg"
                   alt=""
@@ -265,31 +267,8 @@
                   </p>
                 </div>
               </li>
-              <li
-                class="cards-slider__item cards-slider__item-unshowed"
-                id="slide4"
-              >
-                <img
-                  src="./images/carslider4.jpg"
-                  alt=""
-                  class="cards-slider__img"
-                />
-                <div class="cards-slider__block">
-                  <p class="cards-slider__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Cras vulputate laoreet sapien a sit ante.
-                  </p>
-                </div>
-              </li>
             </ul>
-            <button
-              type="button"
-              class="cards-slider__btn-next cards-slider__btn"
-            >
-              <svg width="50" height="50">
-                <use href="./images/sprite.svg#icon-slider-right"></use>
-              </svg>
-            </button>
+            <!-- end -->
           </div>
         </section>
         <section class="description" id="cardetail">
@@ -727,11 +706,14 @@
     <script>
       AOS.init();
     </script>
-    <script src="./js/cards-slider.js"></script>
+
+    <script src="./js/cards-slider.js" type="module"></script>
+
     <script src="./js/services.js"></script>
     <script src="./libs/gsap/gsap.min.js" defer></script>
     <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
     <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="./js/mob-menu.js" defer></script>
 
     <script src="./js/app.js" defer></script>
   </body>

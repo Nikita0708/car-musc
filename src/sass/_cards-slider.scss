@@ -57,22 +57,4 @@
     transition: .2S;
 }
 
-.cards-slider__btn {
-    cursor: pointer;
-    background-color: transparent;
-    border: 0;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%);
-}
 
-.cards-slider__btn-prev {
-    left: -60px;
-}
-
-.cards-slider__btn-next {
-    right: -120px;
-}
-.cards-slider__btn-disabled {
-    opacity: 0.6;
-}

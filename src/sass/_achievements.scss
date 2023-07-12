@@ -2,7 +2,10 @@
     padding-top: 180px;
     padding-bottom: 180px;
     & .container  {
-        display: flex;
+        @media screen and (min-width: 768px) {
+                display: flex;
+            }
+        
     }
 }
 .achievements-left-side {
@@ -10,39 +13,67 @@
     
 }
 .achievements-title {
-    font-size: 52px;
+    font-size: 36px;
         font-weight: 500;
         line-height: 140%;
         letter-spacing: 2.6px;
         text-transform: uppercase;
-        margin-bottom: 40px;
-    width: 636px;
+        margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+            width: 636px;
+            font-size: 52px;
+            margin-bottom: 40px;
+        }
 }
 .achievements-svg-blocks {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+            margin-bottom: 60px;
+        }
 }
 .achievements-text {
-    width: 526px;
-    font-size: 24px;
+    font-size: 17px;
         font-weight: 500;
         line-height: 120%;
         letter-spacing: 0.72px;
+        @media screen and (min-width: 768px) {
+               width: 526px;
+                font-size: 24px;
+            }
+}
+.achievements-svg {
+    @media screen and (min-width: 768px) {
+            width: 28px;
+            height: 73px;
+        }
 }
 .achievements-left-side {
     display: flex;
+    margin-left: -100px ;
+    @media screen and (min-width: 768px) {
+            margin-left: unset;
+        }
 }
 .achievements-item {
     border: 1px solid var(--grey-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 34px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 10px;
+    max-width: 300px;
+        padding-bottom: 24px;
+        padding-left: 10px;
+        padding-right: 10px;
+    @media screen and (min-width: 768px) {
+            padding-top: 20px;
+                padding-bottom: 34px;
+                padding-left: 20px;
+                padding-right: 20px;
+        }
 }
 .achievements-item-text {
     text-align: center;
+    width: 200px;
 }
 .achievements-list:last-child {
     margin-top: 30px;
